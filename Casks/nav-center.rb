@@ -1,6 +1,6 @@
 cask "nav-center" do
-  version "0.1.0-beta,422821673"
-  sha256 "13ca379514893e305c270a3ed573df7e8fbafef996790a45cfd8750a44f1c930"
+  version "0.1.0-beta,422831674"
+  sha256 "7fd9ca0774f525b7adcaad94e88fedb6e2cfce42d83034217a31973356b51d87"
 
   url "https://api.github.com/repos/subdepthtech/nav-center/releases/assets/#{version.csv.second}",
       header: [
@@ -31,6 +31,6 @@ cask "nav-center" do
     Before installing or upgrading, export a GitHub token with read access:
       export HOMEBREW_GITHUB_API_TOKEN="$(gh auth token)"
 
-    The current beta is Developer ID signed but not yet notarized.
+    The current beta is Developer ID signed, notarized, and stapled.
   EOS
 end
